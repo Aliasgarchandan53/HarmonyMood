@@ -29,6 +29,11 @@ body {
   z-index: 9999;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -224,6 +229,7 @@ body {
   padding: 40px 0;
   position: relative;
   width: 100%;
+  margin-top: 15px;
 }
 
 .footer-content {
@@ -288,4 +294,187 @@ body {
   z-index: -1;
 }
 
+.registration {
+  background: linear-gradient(180deg, #04052e, #1b1032);
+  color: #ffffff;
+  padding: 100px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.registration-content {
+  flex: 1;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.registration-content h2 {
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.registration-content form input::placeholder,
+.registration-content form select::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.registration-content form input,
+.registration-content form select,
+.registration-content form button,
+.registration-content form label {
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.registration-content form input,
+.registration-content form select {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(219, 218, 218, 0.1);
+  color: #ffffff;
+}
+
+.registration-content form select {
+  height: auto;
+}
+
+.registration-content form .genre-selection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.genre-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.genre-button {
+  background-color: #1b1032;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.genre-button:hover {
+  background-color: #04052e;
+}
+
+.genre-button.active {
+  background-color: #0090b6;
+  transform: scale(1.01);
+  color: #ffffff;
+}
+
+.registration-content form .terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.registration-content form .terms input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.registration-content form .terms-link,
+.registration-content form .login-link {
+  color: #00a8e8;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.registration-content form .terms-link:hover,
+.registration-content form .login-link:hover {
+  color: #0090b6;
+}
+
+.register-button {
+  background-color: #00a8e8;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #0090b6;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #04052e, #1b1032);
+  color: #ffffff;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  margin-bottom: 20px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.login-container h2 {
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(219, 218, 218, 0.1);
+  color: #ffffff;
+}
+
+.login-button {
+  background-color: #00a8e8;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0090b6;
+}
