@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="dash.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+    />
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/png-clipart/20221028/original/pngtree-music-logo-png-image_8736577.png"
+      type="image/x-icon"
+    />
+    <title>HarmonyMood - Your Emotion, Your Music</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="indexpostlog.html" class="logo-link">
+        <div class="logo">
+          <img
+            src="https://png.pngtree.com/png-clipart/20221028/original/pngtree-music-logo-png-image_8736577.png"
+            alt="HarmonyMood Logo"
+          />
+          <h1>HarmonyMood</h1>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="dash.html">Dashboard</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <div class="user-dashboard">
+        <div class="user-info">
+          <img src="avatar.jpg" alt="User Avatar" class="user-avatar" />
+          <h1 class="username" id="username">John Doe</h1>
+          <div class="mood-indicator" id="moodIndicator">
+            <!-- Mood sentiment icon or emoticon -->
+          </div>
+        </div>
+        <div class="quick-access">
+          <h2>Quick Access</h2>
+          <a href="#" class="quick-link">Explore Recommended Playlists</a>
+          <a href="#" class="quick-link">Discover Music Selections</a>
+        </div>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter a prompt to generate a playlist"
+        />
+        <button id="searchButton">Generate Playlist</button>
+      </div>
+      <div class="music-recommendations" id="musicRecommendations">
+        <!-- Music recommendation cards will be added here using JS -->
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#" class="social-icon">
+            <img src="fb.png" alt="Facebook" />
+          </a>
+          <a href="#" class="social-icon">
+            <img src="twit.png" alt="Twitter" />
+          </a>
+          <a href="#" class="social-icon">
+            <img src="inst.png" alt="Instagram" />
+          </a>
+        </div>
+        <div class="additional-content">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="indexpostlog.html#contact">Contact Us</a>
+        </div>
+        <p class="copyright">© 2023 HarmonyMood. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
