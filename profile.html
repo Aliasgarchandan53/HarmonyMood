@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="profile.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+    />
+    <link
+      rel="icon"
+      href="https://png.pngtree.com/png-clipart/20221028/original/pngtree-music-logo-png-image_8736577.png"
+      type="image/x-icon"
+    />
+    <title>HarmonyMood - Your Emotion, Your Music</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="indexpostlog.html" class="logo-link">
+        <div class="logo">
+          <img
+            src="https://png.pngtree.com/png-clipart/20221028/original/pngtree-music-logo-png-image_8736577.png"
+            alt="HarmonyMood Logo"
+          />
+          <h1>HarmonyMood</h1>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="dash.html">Dashboard</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="welcome-section">
+      <div class="welcome-container">
+        <div class="user-info">
+          <img
+            src="https://images.pexels.com/photos/17807545/pexels-photo-17807545/free-photo-of-man-taking-a-photo-on-a-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="User Avatar"
+            class="user-avatar"
+          />
+          <h2 class="welcome-message" id="welcomeMessage">
+            Welcome, John Doe!
+          </h2>
+        </div>
+      </div>
+    </section>
+    <div class="sections-container">
+      <section class="account-details-section">
+        <div class="account-details-container">
+          <h2 class="section-title">Update Account Details</h2>
+          <form id="accountDetailsForm" class="account-details-form">
+            <label for="newUsername">New Username</label>
+            <input
+              type="text"
+              id="newUsername"
+              placeholder="Enter new username"
+            />
+            <label for="newEmail">New Email</label>
+            <input type="email" id="newEmail" placeholder="Enter new email" />
+            <label for="newPassword">New Password</label>
+            <input
+              type="password"
+              id="newPassword"
+              placeholder="Enter new password"
+            />
+            <button id="updateButton">Update Details</button>
+          </form>
+          <p class="status-message" id="statusMessage"></p>
+        </div>
+      </section>
+
+      <section class="preferred-genres-section">
+        <div class="preferred-genres-container">
+          <h2 class="section-title">Manage Preferred Music Genres</h2>
+          <form id="preferredGenresForm" class="preferred-genres-form">
+            <div class="checkbox-group">
+              <div class="genre-buttons">
+                <button type="button" class="genre-button" data-genre="rock">
+                  Rock
+                </button>
+                <button type="button" class="genre-button" data-genre="pop">
+                  Pop
+                </button>
+                <button type="button" class="genre-button" data-genre="hip-hop">
+                  Hip Hop
+                </button>
+                <button
+                  type="button"
+                  class="genre-button"
+                  data-genre="electronic"
+                >
+                  Electronic
+                </button>
+                <button type="button" class="genre-button" data-genre="jazz">
+                  Jazz
+                </button>
+                <button type="button" class="genre-button" data-genre="lofi">
+                  Lo-Fi
+                </button>
+                <button type="button" class="genre-button" data-genre="blues">
+                  Blues
+                </button>
+                <button type="button" class="genre-button" data-genre="country">
+                  Country
+                </button>
+                <button type="button" class="genre-button" data-genre="classical">
+                  Classical
+                </button>
+                <!-- <button type="button" class="genre-button" data-genre="r&b">
+                  R&B
+                </button>
+                <button type="button" class="genre-button" data-genre="funk">
+                  Funk
+                </button>
+                <button type="button" class="genre-button" data-genre="indie">
+                  indie
+                </button> -->
+            </div>
+            <button id="updateGenresButton">Update Genres</button>
+          </form>
+          <p class="status-message" id="genresStatusMessage"></p>
+        </div>
+      </section>
+    </div>
+    <div class="sentiment-analysis-section">
+      <h2 class="section-title">Sentiment Analysis Trends</h2>
+      <div class="chart-container">
+        <canvas id="sentimentChart"></canvas>
+      </div>
+      <p class="status-message" id="sentimentStatusMessage"></p>
+    </div>
+    
+    <section class="delete-account-section">
+      <div class="delete-account-container">
+        <h2 class="section-title">Delete Account</h2>
+        <p>Are you sure you want to delete your account? This action is irreversible and will remove all your data.</p>
+        <button id="deleteButton">Delete Account</button>
+        <p class="status-message" id="deleteStatusMessage"></p>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#" class="social-icon">
+            <img src="fb.png" alt="Facebook" />
+          </a>
+          <a href="#" class="social-icon">
+            <img src="twit.png" alt="Twitter" />
+          </a>
+          <a href="#" class="social-icon">
+            <img src="inst.png" alt="Instagram" />
+          </a>
+        </div>
+        <div class="additional-content">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="indexpostlog.html#contact">Contact Us</a>
+        </div>
+        <p class="copyright">© 2023 HarmonyMood. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
